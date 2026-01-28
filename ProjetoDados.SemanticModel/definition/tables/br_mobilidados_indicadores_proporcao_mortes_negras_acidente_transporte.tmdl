@@ -1,0 +1,58 @@
+table br_mobilidados_indicadores_proporcao_mortes_negras_acidente_transporte
+	lineageTag: 5321e1fb-fb0c-464d-8db2-e4cce3040c9a
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: aec5e4f6-d8ff-466d-8ec1-691c65fca3bc
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 33e480d0-b342-44b5-bc41-88faee027837
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: fff9e32b-379b-4a6a-9e0e-36f348b015e9
+		summarizeBy: sum
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador
+		dataType: string
+		lineageTag: a3bce537-12ab-471a-9287-0b7cc1b8ad01
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column prop_mortes_negras_acidente_transporte
+		dataType: int64
+		formatString: 0
+		lineageTag: c12dd7c1-7eeb-48bc-a123-8bdca7f23c19
+		summarizeBy: sum
+		sourceColumn: prop_mortes_negras_acidente_transporte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition br_mobilidados_indicadores_proporcao_mortes_negras_acidente_transporte = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("I:\.shortcut-targets-by-id\16mpUODAKcXBWhSgDliFa5sVdzSAlQTCg\Grupo de Estudos Dados\Projeto\dataset\br_mobilidados_indicadores_proporcao_mortes_negras_acidente_transporte.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"sigla_uf", type text}, {"id_municipio", Int64.Type}, {"indicador", type text}, {"prop_mortes_negras_acidente_transporte", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

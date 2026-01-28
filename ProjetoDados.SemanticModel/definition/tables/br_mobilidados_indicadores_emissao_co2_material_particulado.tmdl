@@ -1,0 +1,59 @@
+table br_mobilidados_indicadores_emissao_co2_material_particulado
+	lineageTag: f38ff9fb-1631-4dd3-be1f-d2a5175d1dab
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 60b09636-cdbc-4bda-a4e0-2554b5351898
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 61638469-22f9-4b1f-a2cc-61498911a080
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 60cac759-f54e-4333-96da-056b55a160e1
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_co2
+		dataType: int64
+		formatString: 0
+		lineageTag: d5049fb6-ce8a-44ac-a776-e83b08e1d2d1
+		summarizeBy: sum
+		sourceColumn: emissao_co2
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_mp
+		dataType: int64
+		formatString: 0
+		lineageTag: eb01926a-4848-4b55-b790-c80502bf5957
+		summarizeBy: sum
+		sourceColumn: emissao_mp
+
+		annotation SummarizationSetBy = Automatic
+
+	partition br_mobilidados_indicadores_emissao_co2_material_particulado = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("I:\.shortcut-targets-by-id\16mpUODAKcXBWhSgDliFa5sVdzSAlQTCg\Grupo de Estudos Dados\Projeto\dataset\br_mobilidados_indicadores_emissao_co2_material_particulado.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"sigla_uf", type text}, {"id_municipio", Int64.Type}, {"emissao_co2", Int64.Type}, {"emissao_mp", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

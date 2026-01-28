@@ -1,0 +1,50 @@
+table br_mobilidados_indicadores_divisao_modal
+	lineageTag: d17a01dc-b613-40c1-acfa-e9061360f8bd
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 97cd84b6-c2e6-4e58-8362-36a8c63f7a86
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: e5fdee8c-c9d0-4cf0-8c5c-92cc04eaa795
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column coluna
+		dataType: string
+		lineageTag: 79b2e385-0ded-4b33-a1e7-d68eab850f2f
+		summarizeBy: none
+		sourceColumn: coluna
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisao_modal
+		dataType: double
+		lineageTag: 2a6b99c0-2b31-4a73-8a41-b48016007b3d
+		summarizeBy: sum
+		sourceColumn: divisao_modal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition br_mobilidados_indicadores_divisao_modal = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("I:\.shortcut-targets-by-id\16mpUODAKcXBWhSgDliFa5sVdzSAlQTCg\Grupo de Estudos Dados\Projeto\dataset\br_mobilidados_indicadores_divisao_modal.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"sigla_uf", type text}, {"coluna", type text}, {"divisao_modal", type number}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

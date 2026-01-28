@@ -1,0 +1,61 @@
+table transporte_capacidade
+	lineageTag: dc51d762-62a3-4fd7-84ac-61900f3c908c
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 584adce0-f29e-4504-a2b2-f690aca73965
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 24d364bb-927a-47d8-b87a-241a362175cb
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 02e0b679-40bc-41ec-a50b-2e1520e5eb8b
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador
+		dataType: string
+		lineageTag: 3d2f1b0b-cbcb-48f5-93e4-0b4da165c223
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column prop_tma
+		dataType: int64
+		formatString: 0
+		lineageTag: b2024aff-0243-4539-8885-95bb128ce220
+		summarizeBy: sum
+		sourceColumn: prop_tma
+
+		annotation SummarizationSetBy = Automatic
+
+	partition transporte_capacidade = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("I:\.shortcut-targets-by-id\16mpUODAKcXBWhSgDliFa5sVdzSAlQTCg\Grupo de Estudos Dados\Projeto\dataset\br_mobilidados_indicadores_transporte_media_alta_capacidade.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"sigla_uf", type text}, {"id_municipio", Int64.Type}, {"indicador", type text}, {"prop_tma", Int64.Type}}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Tipo Alterado")
+				in
+				    #"Duplicatas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

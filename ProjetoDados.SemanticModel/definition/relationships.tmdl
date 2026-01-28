@@ -1,0 +1,35 @@
+relationship AutoDetected_9f619181-5f8a-4e2d-b688-b7b241dd4be8
+	fromColumn: br_mobilidados_indicadores_emissao_co2_material_particulado.id_municipio
+	toColumn: infra_domicilios_urbana.id_municipio
+
+relationship AutoDetected_d6f80a6f-1fa6-4c01-9f0d-a1fdc13d7d32
+	fromColumn: br_mobilidados_indicadores_proporcao_pessoas_proximas_pnt.id_municipio
+	toColumn: infra_domicilios_urbana.id_municipio
+
+relationship AutoDetected_385f86a9-0dc3-496e-a71d-ccbe78f1fdf4
+	fromColumn: br_mobilidados_indicadores_taxa_motorizacao.id_municipio
+	toColumn: infra_domicilios_urbana.id_municipio
+
+relationship AutoDetected_84c52c46-f096-422d-bddd-ed021badb0b4
+	fromColumn: br_mobilidados_indicadores_emissao_co2_material_particulado.id_municipio
+	toColumn: tempo_deslocamento.id_municipio
+
+relationship AutoDetected_d6ff88c4-4809-4a79-8325-b47eed8af2f9
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: infra_domicilios_urbana.id_municipio
+	toColumn: tempo_deslocamento.id_municipio
+
+relationship AutoDetected_934a0015-6e60-42b9-a80e-fe0e7585b87e
+	fromColumn: br_mobilidados_indicadores_proporcao_pessoas_proximas_pnt.id_municipio
+	toColumn: tempo_deslocamento.id_municipio
+
+relationship AutoDetected_8863d731-9a36-42cf-b374-c3d0ccc79450
+	fromColumn: br_mobilidados_indicadores_taxa_motorizacao.id_municipio
+	toColumn: tempo_deslocamento.id_municipio
+
+relationship AutoDetected_6662f870-9d63-4737-b8f8-e9f1bf21db65
+	fromColumn: transporte_capacidade.id_municipio
+	toColumn: tempo_deslocamento.id_municipio
+

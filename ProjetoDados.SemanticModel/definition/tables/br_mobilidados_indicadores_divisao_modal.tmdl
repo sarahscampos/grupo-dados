@@ -1,10 +1,10 @@
 table br_mobilidados_indicadores_divisao_modal
-	lineageTag: d17a01dc-b613-40c1-acfa-e9061360f8bd
+	lineageTag: 69fdefb7-1f85-44f2-a62b-2125cb3fd44a
 
 	column ano
 		dataType: int64
 		formatString: 0
-		lineageTag: 97cd84b6-c2e6-4e58-8362-36a8c63f7a86
+		lineageTag: 2963e9c1-c5af-4537-a914-300a793e59d0
 		summarizeBy: sum
 		sourceColumn: ano
 
@@ -12,7 +12,7 @@ table br_mobilidados_indicadores_divisao_modal
 
 	column sigla_uf
 		dataType: string
-		lineageTag: e5fdee8c-c9d0-4cf0-8c5c-92cc04eaa795
+		lineageTag: 5e8caf6d-e4b1-4101-872a-7b5b47e3a7c7
 		summarizeBy: none
 		sourceColumn: sigla_uf
 
@@ -20,7 +20,7 @@ table br_mobilidados_indicadores_divisao_modal
 
 	column coluna
 		dataType: string
-		lineageTag: 79b2e385-0ded-4b33-a1e7-d68eab850f2f
+		lineageTag: 49ff6f91-c8ee-4d11-af0e-97d5e053c4ef
 		summarizeBy: none
 		sourceColumn: coluna
 
@@ -28,7 +28,7 @@ table br_mobilidados_indicadores_divisao_modal
 
 	column divisao_modal
 		dataType: double
-		lineageTag: 2a6b99c0-2b31-4a73-8a41-b48016007b3d
+		lineageTag: 7409fd2e-3566-4e8a-993a-10fd6fe445ad
 		summarizeBy: sum
 		sourceColumn: divisao_modal
 
@@ -40,7 +40,7 @@ table br_mobilidados_indicadores_divisao_modal
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("I:\.shortcut-targets-by-id\16mpUODAKcXBWhSgDliFa5sVdzSAlQTCg\Grupo de Estudos Dados\Projeto\dataset\br_mobilidados_indicadores_divisao_modal.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\Nitro5\OneDrive\Documentos\GitHub\grupo-dados\dataset\original\br_mobilidados_indicadores_divisao_modal.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"sigla_uf", type text}, {"coluna", type text}, {"divisao_modal", type number}})
 				in

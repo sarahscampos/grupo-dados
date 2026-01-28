@@ -8,19 +8,11 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["br_mobilidados_indicadores_divisao_modal","br_mobilidados_indicadores_emissao_co2_material_particulado","infra_domicilios_urbana","br_mobilidados_indicadores_proporcao_mortes_negras_acidente_transporte","br_mobilidados_indicadores_proporcao_pessoas_prox_infra_cicloviaria","br_mobilidados_indicadores_proporcao_pessoas_proximas_pnt","br_mobilidados_indicadores_taxa_motorizacao","tempo_deslocamento","transporte_capacidade"]
+annotation PBI_QueryOrder = ["br_mobilidados_indicadores_divisao_modal"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table br_mobilidados_indicadores_divisao_modal
-ref table br_mobilidados_indicadores_emissao_co2_material_particulado
-ref table infra_domicilios_urbana
-ref table br_mobilidados_indicadores_proporcao_mortes_negras_acidente_transporte
-ref table br_mobilidados_indicadores_proporcao_pessoas_prox_infra_cicloviaria
-ref table br_mobilidados_indicadores_proporcao_pessoas_proximas_pnt
-ref table br_mobilidados_indicadores_taxa_motorizacao
-ref table tempo_deslocamento
-ref table transporte_capacidade
 
 ref cultureInfo pt-BR
 

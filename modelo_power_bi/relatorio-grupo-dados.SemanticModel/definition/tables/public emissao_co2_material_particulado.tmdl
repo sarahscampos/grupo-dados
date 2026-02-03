@@ -1,0 +1,68 @@
+table 'public emissao_co2_material_particulado'
+	lineageTag: 7e2d2493-23ae-4b3e-b503-a3a87fca8441
+
+	column chave
+		dataType: string
+		lineageTag: 2305b474-1ef6-49aa-932d-b6bd0a7b6968
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 123d27bd-9520-4572-9fec-9a4e3de29218
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 4c772591-2406-433b-8d6a-32f9e1eec46b
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: a684bc36-e61d-48fd-8477-81f10e5225c3
+		summarizeBy: sum
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_co2
+		dataType: int64
+		formatString: 0
+		lineageTag: 9399d55e-4516-4044-b85f-eb3c65f70339
+		summarizeBy: sum
+		sourceColumn: emissao_co2
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_mp
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a97b24f-0e2f-4fa3-97fd-027b15b2149e
+		summarizeBy: sum
+		sourceColumn: emissao_mp
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public emissao_co2_material_particulado' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_emissao_co2_material_particulado = Fonte{[Schema="public",Item="emissao_co2_material_particulado"]}[Data]
+				in
+				    public_emissao_co2_material_particulado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

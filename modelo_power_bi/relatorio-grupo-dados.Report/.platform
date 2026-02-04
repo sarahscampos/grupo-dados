@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "relatorio-grupo-dados"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9ea37129-70a6-4a3c-ab49-9617022d6b6a"
+  }
+}

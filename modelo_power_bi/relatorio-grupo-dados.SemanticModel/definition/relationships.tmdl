@@ -1,0 +1,12 @@
+relationship 8d79bce2-db28-d378-8a1e-388853f26069
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public vw_emissao_co2_material_particulado'.chave
+	toColumn: 'public vw_proporcao_domicilios_infra_urbana'.chave
+
+relationship bf96d6ac-9bdd-597b-44d7-94bf42dd6601
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public vw_tempo_deslocamento_casa_trabalho'.chave
+	toColumn: 'public vw_emissao_co2_material_particulado'.chave
+

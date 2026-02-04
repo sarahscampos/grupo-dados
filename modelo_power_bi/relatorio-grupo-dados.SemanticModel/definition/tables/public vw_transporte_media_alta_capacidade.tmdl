@@ -1,0 +1,68 @@
+table 'public vw_transporte_media_alta_capacidade'
+	lineageTag: d72426a8-6f62-4c93-9fdb-e149eecb1938
+
+	column chave
+		dataType: string
+		lineageTag: 61a07574-6546-497a-a809-fcb1a7a1dcd5
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: b7599bff-ce22-4fc4-852f-cd659d52d8a9
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = User
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 3cf5aa8b-8ab9-4c00-9c65-5cbf60854a2c
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 68725c3d-d098-442b-89ed-1d84f0b0d17b
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = User
+
+	column indicador
+		dataType: string
+		lineageTag: 465545c6-1f25-47f5-8f2d-6964523cf19c
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column prop_tma
+		dataType: double
+		lineageTag: 6cec9124-850b-4ce4-8d1f-63864b108143
+		summarizeBy: none
+		sourceColumn: prop_tma
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public vw_transporte_media_alta_capacidade' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_transporte_media_alta_capacidade = Fonte{[Schema="public",Item="vw_transporte_media_alta_capacidade"]}[Data]
+				in
+				    public_vw_transporte_media_alta_capacidade
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

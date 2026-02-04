@@ -1,0 +1,72 @@
+table 'public vw_emissao_co2_material_particulado'
+	lineageTag: 2635d956-bd4d-4722-9cfe-64257b0cc431
+
+	measure Medida = DISTINCTCOUNTNOBLANK('public vw_emissao_co2_material_particulado'[emissao_co2]) + DISTINCTCOUNTNOBLANK('public vw_tempo_deslocamento_casa_trabalho'[tempo_medio_deslocamento])
+		formatString: 0
+		lineageTag: 5dc87ee6-0054-492d-acd1-893f8dbe4ac2
+
+	column chave
+		dataType: string
+		lineageTag: dd6874d8-598f-4a11-a616-6c6f8fe6d62d
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 84abeda1-084e-4ac6-857f-5ce15d28932b
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = User
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 3938cbb6-03db-4e18-9520-706a4616c594
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: ebe972ea-3b8c-4d55-bcfa-a1c5a29f98ba
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = User
+
+	column emissao_co2
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dfe6178-854d-4491-b8e8-df8a1c253349
+		summarizeBy: none
+		sourceColumn: emissao_co2
+
+		annotation SummarizationSetBy = User
+
+	column emissao_mp
+		dataType: int64
+		formatString: 0
+		lineageTag: da8ddaf8-9bfc-45df-a644-3f065146bdd2
+		summarizeBy: none
+		sourceColumn: emissao_mp
+
+		annotation SummarizationSetBy = User
+
+	partition 'public vw_emissao_co2_material_particulado' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_emissao_co2_material_particulado = Fonte{[Schema="public",Item="vw_emissao_co2_material_particulado"]}[Data]
+				in
+				    public_vw_emissao_co2_material_particulado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

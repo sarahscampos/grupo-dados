@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "relatorio-grupo-dados"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c2d5ed79-1315-4de1-a3a6-44488b2b014a"
+  }
+}

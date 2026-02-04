@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "1b7d79ee99a2d104b36b",
+  "position": {
+    "x": 86.486486486486484,
+    "y": 0,
+    "z": 0,
+    "height": 359.7837837837838,
+    "width": 357.47747747747746,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public vw_emissao_co2_material_particulado"
+                    }
+                  },
+                  "Property": "emissao_co2"
+                }
+              },
+              "queryRef": "public vw_emissao_co2_material_particulado.emissao_co2",
+              "nativeQueryRef": "emissao_co2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                    }
+                  },
+                  "Property": "prop_calcadas"
+                }
+              },
+              "queryRef": "public vw_proporcao_domicilios_infra_urbana.prop_calcadas",
+              "nativeQueryRef": "prop_calcadas"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public vw_emissao_co2_material_particulado"
+                    }
+                  },
+                  "Property": "chave"
+                }
+              },
+              "queryRef": "public vw_emissao_co2_material_particulado.chave",
+              "nativeQueryRef": "chave"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public vw_emissao_co2_material_particulado"
+                  }
+                },
+                "Property": "emissao_co2"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

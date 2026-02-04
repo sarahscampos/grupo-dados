@@ -1,0 +1,71 @@
+table 'public vw_proporcao_domicilios_infra_urbana'
+	lineageTag: 1552274e-be90-4924-9bbd-df0884e3ec6d
+
+	column chave
+		dataType: string
+		lineageTag: 33f02ed2-8923-4795-a3a7-f308994c5d0c
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: b3f0d596-831f-403d-a989-651c2544d59a
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = User
+
+	column sigla_uf
+		dataType: string
+		lineageTag: b329b081-5bc5-480a-a2cb-2232f3c0d885
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: d6f293d1-97a6-49e5-b204-d7fa035723eb
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = User
+
+	column prop_calcadas
+		dataType: double
+		lineageTag: 9c339636-fff7-4be5-9154-806150872767
+		summarizeBy: none
+		sourceColumn: prop_calcadas
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column prop_rampas
+		dataType: double
+		lineageTag: a47b260f-576b-4079-9875-224aa26e3b76
+		summarizeBy: none
+		sourceColumn: prop_rampas
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public vw_proporcao_domicilios_infra_urbana' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_proporcao_domicilios_infra_urbana = Fonte{[Schema="public",Item="vw_proporcao_domicilios_infra_urbana"]}[Data],
+				    #"Valor Substituído" = Table.ReplaceValue(public_vw_proporcao_domicilios_infra_urbana,null,0,Replacer.ReplaceValue,{"prop_rampas"})
+				in
+				    #"Valor Substituído"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

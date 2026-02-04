@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "0da602ee6d73fd840c0a",
+  "position": {
+    "x": 468.88888888888886,
+    "y": 10,
+    "z": 2001,
+    "height": 297.77777777777777,
+    "width": 811.11111111111109,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public vw_tempo_deslocamento_casa_trabalho"
+                    }
+                  },
+                  "Property": "tempo_medio_deslocamento"
+                }
+              },
+              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento",
+              "nativeQueryRef": "tempo_medio_deslocamento",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public vw_emissao_co2_material_particulado"
+                        }
+                      },
+                      "Property": "emissao_co2"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "CountNonNull(public vw_emissao_co2_material_particulado.emissao_co2)",
+              "nativeQueryRef": "Soma de emissao_co2"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "public vw_emissao_co2_material_particulado"
+                      }
+                    },
+                    "Property": "emissao_co2"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "120f7a913761fd3e775f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
+              }
+            },
+            "Property": "tempo_medio_deslocamento"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "759207389bfb188c9070",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public vw_emissao_co2_material_particulado"
+                  }
+                },
+                "Property": "emissao_co2"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

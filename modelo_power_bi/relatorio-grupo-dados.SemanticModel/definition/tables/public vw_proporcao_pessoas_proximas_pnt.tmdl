@@ -1,0 +1,50 @@
+table 'public vw_proporcao_pessoas_proximas_pnt'
+	lineageTag: ab5480e3-1feb-4540-8f63-7e718ab22c02
+
+	column chave
+		dataType: string
+		lineageTag: b6043244-c0e8-41e7-b727-349eeee4d360
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 9037e286-c15c-40e1-932a-a6e495573cae
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 19f64454-139b-4874-9556-b42f6109419e
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ce1a406-32fa-41a7-88e4-ee132ef7e0ae
+		summarizeBy: sum
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public vw_proporcao_pessoas_proximas_pnt' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_proporcao_pessoas_proximas_pnt = Fonte{[Schema="public",Item="vw_proporcao_pessoas_proximas_pnt"]}[Data]
+				in
+				    public_vw_proporcao_pessoas_proximas_pnt
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

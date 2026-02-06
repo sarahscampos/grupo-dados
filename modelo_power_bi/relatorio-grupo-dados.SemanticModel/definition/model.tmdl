@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["public vw_emissao_co2_material_particulado","public vw_proporcao_pessoas_prox_infra_ciclovi","public vw_tempo_deslocamento_casa_trabalho","public vw_transporte_media_alta_capacidade","public vw_proporcao_domicilios_infra_urbana"]
+annotation PBI_QueryOrder = ["public vw_emissao_co2_material_particulado","public vw_proporcao_pessoas_prox_infra_ciclovi","public vw_tempo_deslocamento_casa_trabalho","public vw_transporte_media_alta_capacidade","public vw_proporcao_domicilios_infra_urbana","public vw_proporcao_morte_negras_acidente","public vw_proporcao_pessoas_proximas_pnt"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -17,6 +17,8 @@ ref table 'public vw_proporcao_pessoas_prox_infra_ciclovi'
 ref table 'public vw_tempo_deslocamento_casa_trabalho'
 ref table 'public vw_transporte_media_alta_capacidade'
 ref table 'public vw_proporcao_domicilios_infra_urbana'
+ref table 'public vw_proporcao_morte_negras_acidente'
+ref table 'public vw_proporcao_pessoas_proximas_pnt'
 
 ref cultureInfo pt-BR
 

@@ -1,0 +1,64 @@
+table 'public vw_proporcao_morte_negras_acidente'
+	lineageTag: ef20270a-854f-4eec-ac79-5ff902cacf5e
+
+	column chave
+		dataType: string
+		lineageTag: 71f012c9-3983-4795-ba44-a4a6fdc2f1e0
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: string
+		lineageTag: 667eed5c-de0c-4162-af29-caa978576092
+		summarizeBy: none
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: e1678b3f-193e-4419-8234-22b0902f07ec
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: string
+		lineageTag: 186003b2-a47a-456c-9e2d-c39ee022e1b9
+		summarizeBy: none
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador
+		dataType: string
+		lineageTag: c52b1736-32a4-428a-a524-cf249d8f1516
+		summarizeBy: none
+		sourceColumn: indicador
+
+		annotation SummarizationSetBy = Automatic
+
+	column prop_mortes_negras_acidente_transporte
+		dataType: string
+		lineageTag: 24fe8607-3af4-4085-a67a-909448b36bc0
+		summarizeBy: none
+		sourceColumn: prop_mortes_negras_acidente_transporte
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public vw_proporcao_morte_negras_acidente' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_proporcao_morte_negras_acidente = Fonte{[Schema="public",Item="vw_proporcao_morte_negras_acidente"]}[Data]
+				in
+				    public_vw_proporcao_morte_negras_acidente
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

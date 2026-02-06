@@ -10,3 +10,17 @@ relationship bf96d6ac-9bdd-597b-44d7-94bf42dd6601
 	fromColumn: 'public vw_tempo_deslocamento_casa_trabalho'.chave
 	toColumn: 'public vw_emissao_co2_material_particulado'.chave
 
+relationship AutoDetected_49a33fc6-df85-4e4d-9369-5209cef67dd6
+	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.chave
+	toColumn: 'public vw_emissao_co2_material_particulado'.chave
+
+relationship AutoDetected_612f9632-ea97-40ac-b976-5c072adbdc5b
+	isActive: false
+	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.id_municipio
+	toColumn: 'public vw_tempo_deslocamento_casa_trabalho'.id_municipio
+
+relationship AutoDetected_7b0d3fb2-49ce-42ac-a092-703af18d20e1
+	isActive: false
+	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.id_municipio
+	toColumn: 'public vw_proporcao_domicilios_infra_urbana'.id_municipio
+

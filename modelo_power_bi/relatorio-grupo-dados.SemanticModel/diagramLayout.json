@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 367.83595142935167,
+        "x": 583.46392295690237,
         "y": 0
       },
       "nodes": [
@@ -75,14 +75,14 @@
         },
         {
           "location": {
-            "x": 1877.0189456157141,
-            "y": 294.92963808203166
+            "x": 1903.5923606157141,
+            "y": 8.857805
           },
           "nodeIndex": "public vw_proporcao_morte_negras_acidente",
           "nodeLineageTag": "ef20270a-854f-4eec-ac79-5ff902cacf5e",
           "size": {
             "height": 224,
-            "width": 234
+            "width": 398.755173
           },
           "zIndex": 0
         },
@@ -98,10 +98,36 @@
             "width": 359.43065010426153
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1962.6771484287942,
+            "y": 685.25648135243136
+          },
+          "nodeIndex": "public vw_divisao_modal",
+          "nodeLineageTag": "b60ab537-7a85-4864-816a-d83ad2609a50",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2076.6072924287942,
+            "y": 337.6295983524314
+          },
+          "nodeIndex": "public vw_mobilidados_indicadores_taxa_motorizacao",
+          "nodeLineageTag": "d173a2a9-f6ce-4c80-98fe-d76271fe55d3",
+          "size": {
+            "height": 176,
+            "width": 497.96258900000021
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 70.955543900968834,
+      "zoomValue": 70.955543900968863,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

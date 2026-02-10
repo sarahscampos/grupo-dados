@@ -34,3 +34,28 @@ relationship 0383b792-dca4-1061-4f42-b4f67b1e6558
 	fromColumn: 'public vw_proporcao_pessoas_prox_infra_ciclovi'.chave
 	toColumn: 'public vw_emissao_co2_material_particulado'.chave
 
+relationship AutoDetected_38732984-343b-46e1-877d-c7e2b91e8e87
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public vw_emissao_co2_material_particulado'.chave
+	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
+
+relationship AutoDetected_f3614d26-56ab-4fe7-abbb-81977f6b847f
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public vw_tempo_deslocamento_casa_trabalho'.chave
+	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
+
+relationship AutoDetected_fdc412ce-3805-4547-8e36-1e1a37775fb5
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public vw_proporcao_domicilios_infra_urbana'.chave
+	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
+
+relationship AutoDetected_44ceeedb-849a-4413-924e-189dbcdd920f
+	isActive: false
+	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.chave
+	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
+

@@ -1,0 +1,46 @@
+table 'public vw_mobilidados_indicadores_taxa_motorizacao'
+	lineageTag: d173a2a9-f6ce-4c80-98fe-d76271fe55d3
+
+	column chave
+		dataType: string
+		lineageTag: 7cca159b-e54a-4382-9300-edd583831681
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: e689143f-f79e-4843-8b52-3db5a574725d
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: 6095ab83-3feb-4ee0-b2ff-544e13874eab
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_municipio
+		dataType: int64
+		formatString: 0
+		lineageTag: 4038167e-46bb-45a4-9629-fea9bae70250
+		summarizeBy: sum
+		sourceColumn: id_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public vw_mobilidados_indicadores_taxa_motorizacao' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_mobilidados_indicadores_taxa_motorizacao = Fonte{[Schema="public",Item="vw_mobilidados_indicadores_taxa_motorizacao"]}[Data]
+				in
+				    public_vw_mobilidados_indicadores_taxa_motorizacao
+

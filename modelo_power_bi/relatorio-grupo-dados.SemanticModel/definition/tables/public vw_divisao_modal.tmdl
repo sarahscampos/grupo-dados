@@ -1,0 +1,53 @@
+table 'public vw_divisao_modal'
+	lineageTag: b60ab537-7a85-4864-816a-d83ad2609a50
+
+	column chave
+		dataType: string
+		lineageTag: 0774b950-424b-46ec-98d5-48749ddd85e6
+		summarizeBy: none
+		sourceColumn: chave
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: 57cf2844-615e-42a4-a0d1-b0a50036b47d
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_uf
+		dataType: string
+		lineageTag: c699632f-22a8-4d08-bd58-babc2c646c84
+		summarizeBy: none
+		sourceColumn: sigla_uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'percentual viagens'
+		dataType: string
+		lineageTag: 152ee2d4-665f-41ef-a63d-e7562626b1f4
+		summarizeBy: none
+		sourceColumn: percentual viagens
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisao_modal
+		dataType: string
+		lineageTag: 8e5003f6-5a24-4ce5-b191-e2d091f55156
+		summarizeBy: none
+		sourceColumn: divisao_modal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public vw_divisao_modal' = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
+				    public_vw_divisao_modal = Fonte{[Schema="public",Item="vw_divisao_modal"]}[Data]
+				in
+				    public_vw_divisao_modal
+

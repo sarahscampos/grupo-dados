@@ -1,6 +1,11 @@
 table 'public vw_tempo_deslocamento_casa_trabalho'
 	lineageTag: f4d97486-dcb0-4a18-a47c-b1643d9c3335
 
+	measure 'Tempo Médio Viagem' = AVERAGE('public vw_tempo_deslocamento_casa_trabalho'[tempo_medio_deslocamento])
+		lineageTag: 46f4aafc-9028-4804-9fe6-ddfcd0e852b7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column chave
 		dataType: string
 		lineageTag: 15122ae4-7376-41a9-8d10-388c7d4362fd

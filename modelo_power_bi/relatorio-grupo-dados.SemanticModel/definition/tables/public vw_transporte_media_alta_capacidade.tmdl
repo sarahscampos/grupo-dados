@@ -1,6 +1,10 @@
 table 'public vw_transporte_media_alta_capacidade'
 	lineageTag: d72426a8-6f62-4c93-9fdb-e149eecb1938
 
+	measure 'Acesso Cicloviário' = AVERAGE('public vw_transporte_media_alta_capacidade'[indicador])
+		formatString: 0
+		lineageTag: 2657fbbf-421c-46fd-a01a-c25646f98ed9
+
 	column chave
 		dataType: string
 		lineageTag: 61a07574-6546-497a-a809-fcb1a7a1dcd5

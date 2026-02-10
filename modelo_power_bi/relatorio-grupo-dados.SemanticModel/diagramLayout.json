@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 367.83595142935167,
         "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 828.63349536121711,
-            "y": 522.21128509659638
+            "x": 749.710839115839,
+            "y": 625.666172497929
           },
           "nodeIndex": "public vw_emissao_co2_material_particulado",
           "nodeLineageTag": "2635d956-bd4d-4722-9cfe-64257b0cc431",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 1461.4747760298246,
-            "y": 506.89231153666344
+            "x": 1376.9147871954908,
+            "y": 627.2591967048628
           },
           "nodeIndex": "public vw_proporcao_pessoas_prox_infra_ciclovi",
           "nodeLineageTag": "05406192-5526-447c-b665-a4f4f10790de",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 888.32929446599883,
-            "y": 88.566711320368
+            "x": 802.35997248442641,
+            "y": 0
           },
           "nodeIndex": "public vw_tempo_deslocamento_casa_trabalho",
           "nodeLineageTag": "f4d97486-dcb0-4a18-a47c-b1643d9c3335",
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 168.64379077599529,
-            "y": 71.613792667731275
+            "x": 1370.8049653707728,
+            "y": 0
           },
           "nodeIndex": "public vw_transporte_media_alta_capacidade",
           "nodeLineageTag": "d72426a8-6f62-4c93-9fdb-e149eecb1938",
@@ -62,8 +62,8 @@
         },
         {
           "location": {
-            "x": 248.20104520528707,
-            "y": 522.17369920060878
+            "x": 104.44906418691977,
+            "y": 624.21925345470254
           },
           "nodeIndex": "public vw_proporcao_domicilios_infra_urbana",
           "nodeLineageTag": "1552274e-be90-4924-9bbd-df0884e3ec6d",
@@ -72,6 +72,32 @@
             "width": 449.62797152755104
           },
           "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1877.0189456157141,
+            "y": 294.92963808203166
+          },
+          "nodeIndex": "public vw_proporcao_morte_negras_acidente",
+          "nodeLineageTag": "ef20270a-854f-4eec-ac79-5ff902cacf5e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 344.38854032949484,
+            "y": 275.24031051762591
+          },
+          "nodeIndex": "public vw_proporcao_pessoas_proximas_pnt",
+          "nodeLineageTag": "ab5480e3-1feb-4540-8f63-7e718ab22c02",
+          "size": {
+            "height": 176,
+            "width": 359.43065010426153
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",

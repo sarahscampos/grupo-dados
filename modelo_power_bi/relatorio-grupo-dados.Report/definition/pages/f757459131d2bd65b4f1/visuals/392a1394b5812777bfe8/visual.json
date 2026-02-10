@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "0da602ee6d73fd840c0a",
+  "name": "392a1394b5812777bfe8",
   "position": {
-    "x": 661.11111111111109,
-    "y": 475.55555555555554,
+    "x": 532.85714285714289,
+    "y": 470.00000000000006,
     "z": 2000,
-    "height": 217.77777777777777,
-    "width": 584.44444444444446,
-    "tabOrder": 0
+    "height": 208.57142857142858,
+    "width": 711.42857142857144,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "lineChart",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public vw_tempo_deslocamento_casa_trabalho"
+                      "Entity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
                     }
                   },
-                  "Property": "tempo_medio_deslocamento"
+                  "Property": "ano"
                 }
               },
-              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento",
-              "nativeQueryRef": "Tempo Médio Deslocamento",
+              "queryRef": "public vw_proporcao_pessoas_prox_infra_ciclovi.ano",
+              "nativeQueryRef": "Ano",
               "active": true,
-              "displayName": "Tempo Médio Deslocamento"
+              "displayName": "Ano"
             }
           ]
         },
@@ -42,18 +42,18 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "public vw_emissao_co2_material_particulado"
+                          "Entity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
                         }
                       },
-                      "Property": "emissao_co2"
+                      "Property": "prop_pessoas_proximas_ciclovias"
                     }
                   },
                   "Function": 1
                 }
               },
-              "queryRef": "Sum(public vw_emissao_co2_material_particulado.emissao_co2)",
-              "nativeQueryRef": "Média de Emissão de CO2",
-              "displayName": "Média de Emissão de CO2"
+              "queryRef": "CountNonNull(public vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovias)",
+              "nativeQueryRef": "Percentual",
+              "displayName": "Percentual"
             }
           ]
         }
@@ -67,10 +67,10 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "public vw_emissao_co2_material_particulado"
+                        "Entity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
                       }
                     },
-                    "Property": "emissao_co2"
+                    "Property": "prop_pessoas_proximas_ciclovias"
                   }
                 },
                 "Function": 1
@@ -97,9 +97,6 @@
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Sum(public vw_emissao_co2_material_particulado.emissao_co2)"
           }
         },
         {
@@ -109,12 +106,15 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#005F24'"
+                      "Value": "'#00983A'"
                     }
                   }
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "CountNonNull(public vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovias)"
           }
         }
       ]
@@ -123,13 +123,6 @@
       "title": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Média de Emissão CO2 por Tempo Médio de Deslocamento (2010)'"
-                }
-              }
-            },
             "titleWrap": {
               "expr": {
                 "Literal": {
@@ -148,6 +141,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Média Percentual Pessoas Próximas às Ciclovias por Ano'"
                 }
               }
             }
@@ -252,107 +252,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c56693b6e939d86e5453",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "public vw_emissao_co2_material_particulado"
-              }
-            },
-            "Property": "ano"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "p",
-              "Entity": "public vw_emissao_co2_material_particulado",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "p"
-                        }
-                      },
-                      "Property": "ano"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2010L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "120b190a87b6cc22818a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
-              }
-            },
-            "Property": "ano"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "p",
-              "Entity": "public vw_tempo_deslocamento_casa_trabalho",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "p"
-                        }
-                      },
-                      "Property": "ano"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2010L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      }
-    ]
   }
 }

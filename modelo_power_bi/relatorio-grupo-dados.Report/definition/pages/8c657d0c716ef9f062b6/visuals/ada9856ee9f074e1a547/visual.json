@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "0da602ee6d73fd840c0a",
+  "name": "ada9856ee9f074e1a547",
   "position": {
-    "x": 661.11111111111109,
-    "y": 475.55555555555554,
-    "z": 2000,
+    "x": 35.555555555555557,
+    "y": 476,
+    "z": 3000,
     "height": 217.77777777777777,
     "width": 584.44444444444446,
-    "tabOrder": 0
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "lineChart",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public vw_tempo_deslocamento_casa_trabalho"
+                      "Entity": "public vw_emissao_co2_material_particulado"
                     }
                   },
-                  "Property": "tempo_medio_deslocamento"
+                  "Property": "ano"
                 }
               },
-              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento",
-              "nativeQueryRef": "Tempo Médio Deslocamento",
+              "queryRef": "public vw_emissao_co2_material_particulado.ano",
+              "nativeQueryRef": "Ano",
               "active": true,
-              "displayName": "Tempo Médio Deslocamento"
+              "displayName": "Ano"
             }
           ]
         },
@@ -48,12 +48,36 @@
                       "Property": "emissao_co2"
                     }
                   },
-                  "Function": 1
+                  "Function": 0
                 }
               },
               "queryRef": "Sum(public vw_emissao_co2_material_particulado.emissao_co2)",
-              "nativeQueryRef": "Média de Emissão de CO2",
-              "displayName": "Média de Emissão de CO2"
+              "nativeQueryRef": "Emissão CO2",
+              "displayName": "Emissão CO2"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public vw_emissao_co2_material_particulado"
+                        }
+                      },
+                      "Property": "emissao_mp"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public vw_emissao_co2_material_particulado.emissao_mp)",
+              "nativeQueryRef": "Emissão MP",
+              "displayName": "Emissão MP"
             }
           ]
         }
@@ -73,7 +97,7 @@
                     "Property": "emissao_co2"
                   }
                 },
-                "Function": 1
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -91,15 +115,12 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#00983A'"
+                      "Value": "'#005F24'"
                     }
                   }
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Sum(public vw_emissao_co2_material_particulado.emissao_co2)"
           }
         },
         {
@@ -109,12 +130,15 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#005F24'"
+                      "Value": "'#00983A'"
                     }
                   }
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Sum(public vw_emissao_co2_material_particulado.emissao_co2)"
           }
         }
       ]
@@ -126,7 +150,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Média de Emissão CO2 por Tempo Médio de Deslocamento (2010)'"
+                  "Value": "'Emissão de CO2 e Material Particulado (MP) por Ano'"
                 }
               }
             },
@@ -252,107 +276,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c56693b6e939d86e5453",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "public vw_emissao_co2_material_particulado"
-              }
-            },
-            "Property": "ano"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "p",
-              "Entity": "public vw_emissao_co2_material_particulado",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "p"
-                        }
-                      },
-                      "Property": "ano"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2010L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "120b190a87b6cc22818a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
-              }
-            },
-            "Property": "ano"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "p",
-              "Entity": "public vw_tempo_deslocamento_casa_trabalho",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 0,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "p"
-                        }
-                      },
-                      "Property": "ano"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2010L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      }
-    ]
   }
 }

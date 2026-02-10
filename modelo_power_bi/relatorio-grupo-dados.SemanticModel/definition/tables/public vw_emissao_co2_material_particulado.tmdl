@@ -1,9 +1,23 @@
 table 'public vw_emissao_co2_material_particulado'
 	lineageTag: 2635d956-bd4d-4722-9cfe-64257b0cc431
 
-	measure Medida = DISTINCTCOUNTNOBLANK('public vw_emissao_co2_material_particulado'[emissao_co2]) + DISTINCTCOUNTNOBLANK('public vw_tempo_deslocamento_casa_trabalho'[tempo_medio_deslocamento])
+	measure maior_emissao_co2_anual = ```
+			MAXX(
+			    VALUES('public vw_emissao_co2_material_particulado'[ano]),
+			    CALCULATE(SUM('public vw_emissao_co2_material_particulado'[emissao_co2])) 
+			)
+			```
 		formatString: 0
-		lineageTag: 5dc87ee6-0054-492d-acd1-893f8dbe4ac2
+		lineageTag: 8fac5f25-488f-41fa-a09e-c33e12bdfc45
+
+	measure maior_emissao_mp_anual = ```
+			MAXX(
+			    VALUES('public vw_emissao_co2_material_particulado'[ano]),
+			    CALCULATE(SUM('public vw_emissao_co2_material_particulado'[emissao_mp])) 
+			)
+			```
+		formatString: 0
+		lineageTag: bb76d9ca-0bf5-47c0-aa13-45b844dc5e12
 
 	column chave
 		dataType: string

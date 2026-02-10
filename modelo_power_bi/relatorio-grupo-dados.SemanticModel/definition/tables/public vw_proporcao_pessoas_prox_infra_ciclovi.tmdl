@@ -44,8 +44,8 @@ table 'public vw_proporcao_pessoas_prox_infra_ciclovi'
 		annotation SummarizationSetBy = Automatic
 
 	column prop_pessoas_proximas_ciclovias
-		dataType: int64
-		formatString: 0
+		dataType: double
+		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: c6c2050d-b1ad-4012-91f8-4bddbeb97d1b
 		summarizeBy: none
 		sourceColumn: prop_pessoas_proximas_ciclovias
@@ -57,9 +57,11 @@ table 'public vw_proporcao_pessoas_prox_infra_ciclovi'
 		source =
 				let
 				    Fonte = PostgreSQL.Database("db.emkhwtligrcpkfvmdmim.supabase.co", "postgres"),
-				    public_vw_proporcao_pessoas_prox_infra_ciclovi = Fonte{[Schema="public",Item="vw_proporcao_pessoas_prox_infra_ciclovi"]}[Data]
+				    public_vw_proporcao_pessoas_prox_infra_ciclovi = Fonte{[Schema="public",Item="vw_proporcao_pessoas_prox_infra_ciclovi"]}[Data],
+				    #"Coluna dividida" = Table.TransformColumns(public_vw_proporcao_pessoas_prox_infra_ciclovi, {{"prop_pessoas_proximas_ciclovias", each _ / 100, type number}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna dividida",{{"prop_pessoas_proximas_ciclovias", Percentage.Type}})
 				in
-				    public_vw_proporcao_pessoas_prox_infra_ciclovi
+				    #"Tipo Alterado"
 
 	annotation PBI_NavigationStepName = Navegação
 

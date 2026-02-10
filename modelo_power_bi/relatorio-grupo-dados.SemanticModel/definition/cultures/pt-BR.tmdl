@@ -2,8 +2,2886 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "public_vw_emissao_co2_material_particulado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_emissao_co2_material_particulado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "UF": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.emissao_co_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "emissao_co2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "emissao co 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "emissao_co2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.emissao_mp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "emissao_mp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "emissao mp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "emissao_mp": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.maior_emissao_co_2_anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "maior_emissao_co2_anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maior emissao co 2 anual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maior_emissao_co2_anual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Maior emissão de CO2 registrada anualmente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_proporcao_pessoas_prox_infra_ciclovi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "UF": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi",
+			          "ConceptualProperty": "prop_pessoas_proximas_ciclovias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop pessoas proximas ciclovia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop pessoa proxima ciclovia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "prop_pessoas_proximas_ciclovias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_tempo_deslocamento_casa_trabalho": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "tempo_medio_deslocamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo medio deslocamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo_medio_deslocamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tempo Médio Deslocamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho.prop_deslocamento_acima_1_hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho",
+			          "ConceptualProperty": "prop_deslocamento_acima_1_hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop deslocamento acima 1 hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop_deslocamento_acima_1_hora": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_transporte_media_alta_capacidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade.prop_tma": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_transporte_media_alta_capacidade",
+			          "ConceptualProperty": "prop_tma"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop tma": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop_tma": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_proporcao_domicilios_infra_urbana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.prop_calcada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "prop_calcadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop calcada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop_calcadas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana.prop_rampa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana",
+			          "ConceptualProperty": "prop_rampas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop rampa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop_rampas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_proporcao_morte_negras_acidente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente.prop_mortes_negras_acidente_transporte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_morte_negras_acidente",
+			          "ConceptualProperty": "prop_mortes_negras_acidente_transporte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prop mortes negras acidente transporte": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prop morte negra acidente transporte": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "prop_mortes_negras_acidente_transporte": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public vw_proporcao_pessoas_proximas_pnt": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt.chave": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt",
+			          "ConceptualProperty": "chave"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "chave": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt.sigla_uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt",
+			          "ConceptualProperty": "sigla_uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sigla uf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sigla_uf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt.id_municipio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt",
+			          "ConceptualProperty": "id_municipio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id municipio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_municipio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential municipio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado.maior_emissao_mp_anual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public vw_emissao_co2_material_particulado",
+			          "ConceptualProperty": "maior_emissao_mp_anual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maior emissao mp anual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maior_emissao_mp_anual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "public_vw_proporcao_pessoas_proximas_pnt_has_public_vw_emissao_co2_material_particulado": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_proximas_pnt": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_proximas_pnts_have_public_vw_emissao_co2_material_particulados"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_public_vw_proporcao_pessoas_proximas_pnts"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_public_vw_emissao_co2_material_particulado": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_public_vw_emissao_co2_material_particulados"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_public_vw_emissao_co2_material_particulado": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_public_vw_emissao_co2_material_particulados"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_public_vw_emissao_co2_material_particulado": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_public_vw_emissao_co2_material_particulados"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_public_vw_proporcao_pessoas_prox_infra_ciclovis"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_public_vw_transporte_media_alta_capacidade": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_public_vw_transporte_media_alta_capacidades"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_public_vw_tempo_deslocamento_casa_trabalho": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_public_vw_tempo_deslocamento_casa_trabalhos"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_public_vw_proporcao_domicilios_infra_urbana": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_public_vw_proporcao_domicilios_infra_urbanas"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_maior_emissao_mp_anual": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.maior_emissao_mp_anual": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.maior_emissao_mp_anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.maior_emissao_mp_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_maior_emissao_mp_anual"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_proximas_pnt": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_proximas_pnt.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_proximas_pnts_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_proximas_pnt": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_proximas_pnt.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_proximas_pnts_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_proximas_pnt_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_proximas_pnt"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_proximas_pnt": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_proximas_pnt.ano": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_proximas_pnt.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_proximas_pnt.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_proximas_pnts_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_prop_mortes_negras_acidente_transporte": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.prop_mortes_negras_acidente_transporte": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.prop_mortes_negras_acidente_transporte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.prop_mortes_negras_acidente_transporte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_prop_mortes_negras_acidente_transportes"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.indicador": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_indicadors"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.ano": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_morte_negras_acidente_has_chave": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_morte_negras_acidente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_morte_negras_acidente": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente"
+			          }
+			        },
+			        "public_vw_proporcao_morte_negras_acidente.chave": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_morte_negras_acidente.chave"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_morte_negras_acidente.chave"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_morte_negras_acidentes_have_chaves"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_prop_rampa": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.prop_rampa": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.prop_rampa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.prop_rampa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_prop_rampas"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_prop_calcada": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.prop_calcada": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.prop_calcada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.prop_calcada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_prop_calcadas"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.ano": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_domicilios_infra_urbana_has_chave": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_domicilios_infra_urbana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_domicilios_infra_urbana": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana"
+			          }
+			        },
+			        "public_vw_proporcao_domicilios_infra_urbana.chave": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_domicilios_infra_urbana.chave"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_domicilios_infra_urbana.chave"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_domicilios_infra_urbanas_have_chaves"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_prop_tma": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.prop_tma": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.prop_tma"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.prop_tma"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_prop_tmas"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.indicador": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_indicadors"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.ano": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_transporte_media_alta_capacidade_has_chave": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_transporte_media_alta_capacidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_transporte_media_alta_capacidade": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade"
+			          }
+			        },
+			        "public_vw_transporte_media_alta_capacidade.chave": {
+			          "Target": {
+			            "Entity": "public_vw_transporte_media_alta_capacidade.chave"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_transporte_media_alta_capacidade"
+			            },
+			            "Object": {
+			              "Role": "public_vw_transporte_media_alta_capacidade.chave"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_transporte_media_alta_capacidades_have_chaves"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_prop_deslocamento_acima_1_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.prop_deslocamento_acima_1_hora": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.prop_deslocamento_acima_1_hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.prop_deslocamento_acima_1_hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_prop_deslocamento_acima_1_horas"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_tempo_medio_deslocamento": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.tempo_medio_deslocamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_tempo_medio_deslocamentos"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.ano": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_tempo_deslocamento_casa_trabalho_has_chave": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_tempo_deslocamento_casa_trabalho"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_tempo_deslocamento_casa_trabalho": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho"
+			          }
+			        },
+			        "public_vw_tempo_deslocamento_casa_trabalho.chave": {
+			          "Target": {
+			            "Entity": "public_vw_tempo_deslocamento_casa_trabalho.chave"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho"
+			            },
+			            "Object": {
+			              "Role": "public_vw_tempo_deslocamento_casa_trabalho.chave"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_tempo_deslocamento_casa_trabalhos_have_chaves"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_prop_pessoas_proximas_ciclovia": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovia": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi.prop_pessoas_proximas_ciclovia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_prop_pessoas_proximas_ciclovias"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi.indicador": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_indicadors"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_proporcao_pessoas_prox_infra_ciclovi_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			          }
+			        },
+			        "public_vw_proporcao_pessoas_prox_infra_ciclovi.ano": {
+			          "Target": {
+			            "Entity": "public_vw_proporcao_pessoas_prox_infra_ciclovi.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi"
+			            },
+			            "Object": {
+			              "Role": "public_vw_proporcao_pessoas_prox_infra_ciclovi.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_proporcao_pessoas_prox_infra_ciclovis_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_maior_emissao_co_2_anual": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.maior_emissao_co_2_anual": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.maior_emissao_co_2_anual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.maior_emissao_co_2_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_maior_emissao_co_2_anual"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_emissao_mp": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.emissao_mp": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.emissao_mp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.emissao_mp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_emissao_mp"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_emissao_co_2": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.emissao_co_2": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.emissao_co_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.emissao_co_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_emissao_co_2"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_id_municipio": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.id_municipio": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.id_municipio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.id_municipio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_id_municipios"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_sigla_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.sigla_uf": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.sigla_uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.sigla_uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_sigla_ufs"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.ano": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_anos"
+			        }
+			      ]
+			    },
+			    "public_vw_emissao_co2_material_particulado_has_chave": {
+			      "Binding": {
+			        "ConceptualEntity": "public vw_emissao_co2_material_particulado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_vw_emissao_co2_material_particulado": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado"
+			          }
+			        },
+			        "public_vw_emissao_co2_material_particulado.chave": {
+			          "Target": {
+			            "Entity": "public_vw_emissao_co2_material_particulado.chave"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_vw_emissao_co2_material_particulado"
+			            },
+			            "Object": {
+			              "Role": "public_vw_emissao_co2_material_particulado.chave"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_vw_emissao_co2_material_particulados_have_chaves"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

@@ -24,3 +24,13 @@ relationship AutoDetected_7b0d3fb2-49ce-42ac-a092-703af18d20e1
 	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.id_municipio
 	toColumn: 'public vw_proporcao_domicilios_infra_urbana'.id_municipio
 
+relationship 64dd0105-663b-a04d-a3cb-8d36d6c5e64e
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'public vw_proporcao_pessoas_prox_infra_ciclovi'.chave
+	toColumn: 'public vw_transporte_media_alta_capacidade'.chave
+
+relationship 0383b792-dca4-1061-4f42-b4f67b1e6558
+	fromColumn: 'public vw_proporcao_pessoas_prox_infra_ciclovi'.chave
+	toColumn: 'public vw_emissao_co2_material_particulado'.chave
+

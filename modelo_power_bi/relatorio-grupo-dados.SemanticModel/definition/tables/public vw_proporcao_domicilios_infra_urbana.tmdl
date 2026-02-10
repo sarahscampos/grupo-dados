@@ -1,6 +1,16 @@
 table 'public vw_proporcao_domicilios_infra_urbana'
 	lineageTag: 1552274e-be90-4924-9bbd-df0884e3ec6d
 
+	measure 'Média de Calçadas' = AVERAGE('public vw_proporcao_domicilios_infra_urbana'[prop_calcadas])
+		lineageTag: 8ab6e14e-da0a-4381-900c-86fe0cd5643a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Média de Rampas' = AVERAGE('public vw_proporcao_domicilios_infra_urbana'[prop_rampas])
+		lineageTag: b8d876ea-61e8-4c8d-8215-7d1d332b0b51
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column chave
 		dataType: string
 		lineageTag: 33f02ed2-8923-4795-a3a7-f308994c5d0c

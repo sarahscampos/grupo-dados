@@ -4,10 +4,10 @@
   "position": {
     "x": 844.28571428571433,
     "y": 90,
-    "z": 4002,
+    "z": 6000,
     "height": 77.142857142857153,
     "width": 190,
-    "tabOrder": 4001
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -122,20 +122,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "f02a9c57d86a5f077a76",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "public vw_proporcao_pessoas_prox_infra_ciclovi"
-              }
-            },
-            "Property": "ano"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

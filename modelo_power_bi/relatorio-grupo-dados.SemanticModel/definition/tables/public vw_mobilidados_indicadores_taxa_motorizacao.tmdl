@@ -13,7 +13,7 @@ table 'public vw_mobilidados_indicadores_taxa_motorizacao'
 		dataType: int64
 		formatString: 0
 		lineageTag: e689143f-f79e-4843-8b52-3db5a574725d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ano
 
 		annotation SummarizationSetBy = Automatic
@@ -30,7 +30,7 @@ table 'public vw_mobilidados_indicadores_taxa_motorizacao'
 		dataType: int64
 		formatString: 0
 		lineageTag: 4038167e-46bb-45a4-9629-fea9bae70250
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_municipio
 
 		annotation SummarizationSetBy = Automatic

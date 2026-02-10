@@ -59,3 +59,7 @@ relationship AutoDetected_44ceeedb-849a-4413-924e-189dbcdd920f
 	fromColumn: 'public vw_proporcao_pessoas_proximas_pnt'.chave
 	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
 
+relationship fbed67b3-225e-5651-7016-885438d3ba76
+	fromColumn: 'public vw_proporcao_morte_negras_acidente'.chave
+	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
+

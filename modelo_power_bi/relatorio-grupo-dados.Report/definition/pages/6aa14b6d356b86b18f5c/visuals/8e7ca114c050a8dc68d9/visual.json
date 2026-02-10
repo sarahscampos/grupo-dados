@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "8e7ca114c050a8dc68d9",
   "position": {
-    "x": 16,
-    "y": 16,
+    "x": 14.444444444444445,
+    "y": 15.555555555555555,
     "z": 0,
-    "height": 272,
-    "width": 304,
+    "height": 272.22222222222223,
+    "width": 320,
     "tabOrder": 0
   },
   "visual": {
@@ -48,11 +48,11 @@
                       "Property": "prop_rampas"
                     }
                   },
-                  "Function": 5
+                  "Function": 1
                 }
               },
               "queryRef": "CountNonNull(public vw_proporcao_domicilios_infra_urbana.prop_rampas)",
-              "nativeQueryRef": "prop_rampas"
+              "nativeQueryRef": "Média de prop_rampas"
             }
           ]
         }
@@ -72,13 +72,12 @@
                     "Property": "prop_rampas"
                   }
                 },
-                "Function": 5
+                "Function": 1
               }
             },
             "direction": "Descending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "visualContainerObjects": {
@@ -149,5 +148,130 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3e4b64c61f5d4f320e53",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_proporcao_domicilios_infra_urbana"
+              }
+            },
+            "Property": "sigla_uf"
+          }
+        },
+        "type": "TopN",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "public vw_proporcao_domicilios_infra_urbana",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "p"
+                            }
+                          },
+                          "Property": "sigla_uf"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "p"
+                                  }
+                                },
+                                "Property": "sigla_uf"
+                              }
+                            },
+                            "Function": 3
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 10
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "p",
+              "Entity": "public vw_proporcao_domicilios_infra_urbana",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "p"
+                          }
+                        },
+                        "Property": "sigla_uf"
+                      }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "isHiddenInViewMode": true
+      },
+      {
+        "name": "8c52809fec66f6cd17d1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                  }
+                },
+                "Property": "prop_rampas"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

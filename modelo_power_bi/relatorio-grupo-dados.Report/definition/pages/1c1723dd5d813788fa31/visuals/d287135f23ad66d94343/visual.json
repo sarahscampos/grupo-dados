@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c160c7a4ce38993f0cb3",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "d287135f23ad66d94343",
   "position": {
-    "x": 792,
-    "y": 16,
-    "z": 4000,
-    "height": 112,
-    "width": 192,
-    "tabOrder": 4000
+    "x": 32,
+    "y": 592,
+    "z": 6000,
+    "height": 96,
+    "width": 224,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "public vw_tempo_deslocamento_casa_trabalho"
                     }
                   },
-                  "Property": "Tempo Médio Viagem"
+                  "Property": "% Acima de 1h"
                 }
               },
-              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.Tempo Médio Viagem",
-              "nativeQueryRef": "Tempo Médio Viagem"
+              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.% Acima de 1h",
+              "nativeQueryRef": "% Acima de 1h"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "public vw_tempo_deslocamento_casa_trabalho"
                   }
                 },
-                "Property": "Tempo Médio Viagem"
+                "Property": "% Acima de 1h"
               }
             },
             "direction": "Descending"
@@ -55,6 +55,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
@@ -69,10 +76,10 @@
                 }
               }
             },
-            "bold": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -81,19 +88,6 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
       "dropShadow": [
         {
           "properties": {
@@ -107,13 +101,41 @@
           }
         }
       ],
-      "border": [
+      "title": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tempo Acima de 1h        (%)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Candara'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }
@@ -122,5 +144,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "02c78bf00a7cdd425a22",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
+              }
+            },
+            "Property": "% Acima de 1h"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

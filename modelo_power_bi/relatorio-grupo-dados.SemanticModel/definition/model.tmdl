@@ -21,6 +21,7 @@ ref table 'public vw_proporcao_morte_negras_acidente'
 ref table 'public vw_proporcao_pessoas_proximas_pnt'
 ref table 'public vw_divisao_modal'
 ref table 'public vw_mobilidados_indicadores_taxa_motorizacao'
+ref table dCalendario
 
 ref cultureInfo pt-BR
 

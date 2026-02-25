@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "6cb2cf4834280b59b42c",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "1b03c83082b09de6eb80",
   "position": {
-    "x": 344,
-    "y": 304,
-    "z": 2000,
-    "height": 112,
-    "width": 192,
-    "tabOrder": 2000
+    "x": 32,
+    "y": 928,
+    "z": 7000,
+    "height": 96,
+    "width": 224,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "public vw_proporcao_domicilios_infra_urbana"
                     }
                   },
-                  "Property": "Média de Calçadas"
+                  "Property": "Média de Rampas"
                 }
               },
-              "queryRef": "public vw_proporcao_domicilios_infra_urbana.Média de Calçadas",
-              "nativeQueryRef": "Média de Calçadas"
+              "queryRef": "public vw_proporcao_domicilios_infra_urbana.Média de Rampas",
+              "nativeQueryRef": "Média de Rampas"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "public vw_proporcao_domicilios_infra_urbana"
                   }
                 },
-                "Property": "Média de Calçadas"
+                "Property": "Média de Rampas"
               }
             },
             "direction": "Descending"
@@ -55,10 +55,10 @@
       "categoryLabels": [
         {
           "properties": {
-            "bold": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -76,10 +76,10 @@
                 }
               }
             },
-            "show": {
+            "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -88,6 +88,54 @@
       ]
     },
     "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Média de Rampas'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Candara'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dropShadow": [
         {
           "properties": {
@@ -101,7 +149,20 @@
           }
         }
       ],
-      "title": [
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
         {
           "properties": {
             "show": {
@@ -111,31 +172,10 @@
                 }
               }
             },
-            "text": {
+            "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "'Média de Calçadas'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Candara'"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "0D"
                 }
               }
             }
@@ -144,5 +184,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d2bb8192ad0046a0ea71",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_proporcao_domicilios_infra_urbana"
+              }
+            },
+            "Property": "Média de Rampas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

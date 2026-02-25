@@ -2,14 +2,12 @@ table 'public vw_proporcao_domicilios_infra_urbana'
 	lineageTag: 1552274e-be90-4924-9bbd-df0884e3ec6d
 
 	measure 'Média de Calçadas' = AVERAGE('public vw_proporcao_domicilios_infra_urbana'[prop_calcadas])
+		formatString: 0
 		lineageTag: 8ab6e14e-da0a-4381-900c-86fe0cd5643a
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	measure 'Média de Rampas' = AVERAGE('public vw_proporcao_domicilios_infra_urbana'[prop_rampas])
+		formatString: 0
 		lineageTag: b8d876ea-61e8-4c8d-8215-7d1d332b0b51
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column chave
 		dataType: string
@@ -31,6 +29,7 @@ table 'public vw_proporcao_domicilios_infra_urbana'
 	column sigla_uf
 		dataType: string
 		lineageTag: b329b081-5bc5-480a-a2cb-2232f3c0d885
+		dataCategory: StateOrProvince
 		summarizeBy: none
 		sourceColumn: sigla_uf
 

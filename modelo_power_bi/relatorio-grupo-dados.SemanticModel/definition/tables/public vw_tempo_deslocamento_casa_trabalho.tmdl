@@ -6,6 +6,14 @@ table 'public vw_tempo_deslocamento_casa_trabalho'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Ranking UF Tempo' = RANKX(ALL('public vw_divisao_modal'[sigla_uf]), [Tempo Médio Viagem], , DESC)
+		formatString: 0
+		lineageTag: df3cea2e-c4bf-4138-9bae-584943e2f2fd
+
+	measure '% Acima de 1h' = AVERAGE('public vw_tempo_deslocamento_casa_trabalho'[prop_deslocamento_acima_1_hora]) / 100
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ceef98ec-2ca0-47c5-ad66-bbd44d1ae44f
+
 	column chave
 		dataType: string
 		lineageTag: 15122ae4-7376-41a9-8d10-388c7d4362fd
@@ -26,6 +34,7 @@ table 'public vw_tempo_deslocamento_casa_trabalho'
 	column sigla_uf
 		dataType: string
 		lineageTag: e9f7ece8-da93-46ab-8ee2-b5e8dcee87b5
+		dataCategory: StateOrProvince
 		summarizeBy: none
 		sourceColumn: sigla_uf
 
@@ -58,6 +67,41 @@ table 'public vw_tempo_deslocamento_casa_trabalho'
 		annotation SummarizationSetBy = User
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nome_Estado =
+			
+			SWITCH(
+			    'public vw_tempo_deslocamento_casa_trabalho'[sigla_uf],
+			    "AC", "Acre", "AL", "Alagoas", "AP", "Amapá", "AM", "Amazonas",
+			    "BA", "Bahia", "CE", "Ceará", "DF", "Distrito Federal", "ES", "Espírito Santo",
+			    "GO", "Goiás", "MA", "Maranhão", "MT", "Mato Grosso", "MS", "Mato Grosso do Sul",
+			    "MG", "Minas Gerais", "PA", "Pará", "PB", "Paraíba", "PR", "Paraná",
+			    "PE", "Pernambuco", "PI", "Piauí", "RJ", "Rio de Janeiro", "RN", "Rio Grande do Norte",
+			    "RS", "Rio Grande do Sul", "RO", "Rondônia", "RR", "Roraima", "SC", "Santa Catarina",
+			    "SP", "São Paulo", "SE", "Sergipe", "TO", "Tocantins",
+			    "Brasil"
+			)
+		dataType: string
+		lineageTag: f2bfd107-015b-439f-939b-ebf2bc80aada
+		dataCategory: StateOrProvince
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	hierarchy hGeografia
+		lineageTag: 0b706210-4cf3-401e-9eac-c5ec4a2b6c9d
+
+		level sigla_uf
+			lineageTag: 046d3adf-ce59-4ab2-9171-b64891cde384
+			column: sigla_uf
+
+		level id_municipio
+			lineageTag: 5e69aced-2da4-49fb-9ec5-3eaa415f00c2
+			column: id_municipio
 
 	partition 'public vw_tempo_deslocamento_casa_trabalho' = m
 		mode: import

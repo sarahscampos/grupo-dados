@@ -1,57 +1,33 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "0d5af54a4c6107586868",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "887443b11212bce85547",
   "position": {
-    "x": 344,
-    "y": 16,
+    "x": 32,
+    "y": 816,
     "z": 1000,
-    "height": 272,
-    "width": 320,
+    "height": 96,
+    "width": 224,
     "tabOrder": 1000
   },
   "visual": {
-    "visualType": "funnel",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "public vw_proporcao_domicilios_infra_urbana"
                     }
                   },
-                  "Property": "sigla_uf"
+                  "Property": "Média de Calçadas"
                 }
               },
-              "queryRef": "public vw_proporcao_domicilios_infra_urbana.sigla_uf",
-              "nativeQueryRef": "sigla_uf",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "public vw_proporcao_domicilios_infra_urbana"
-                        }
-                      },
-                      "Property": "prop_calcadas"
-                    }
-                  },
-                  "Function": 5
-                }
-              },
-              "queryRef": "CountNonNull(public vw_proporcao_domicilios_infra_urbana.prop_calcadas)",
-              "nativeQueryRef": "Contagem de prop_calcadas"
+              "queryRef": "public vw_proporcao_domicilios_infra_urbana.Média de Calçadas",
+              "nativeQueryRef": "Média de Calçadas"
             }
           ]
         }
@@ -60,18 +36,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "public vw_proporcao_domicilios_infra_urbana"
-                      }
-                    },
-                    "Property": "prop_calcadas"
+                  "SourceRef": {
+                    "Entity": "public vw_proporcao_domicilios_infra_urbana"
                   }
                 },
-                "Function": 5
+                "Property": "Média de Calçadas"
               }
             },
             "direction": "Descending"
@@ -81,82 +52,13 @@
       }
     },
     "objects": {
-      "labels": [
+      "categoryLabels": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "funnelLabelStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Data'"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "percentBarLabel": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Estados com mais Calçadas'"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "false"
                 }
               }
             },
@@ -164,6 +66,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Candara'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             },
@@ -176,7 +85,9 @@
             }
           }
         }
-      ],
+      ]
+    },
+    "visualContainerObjects": {
       "dropShadow": [
         {
           "properties": {
@@ -190,13 +101,81 @@
           }
         }
       ],
-      "border": [
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Média de Calçadas'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Candara'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -205,5 +184,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "eb37ba27100e9b0765d1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_proporcao_domicilios_infra_urbana"
+              }
+            },
+            "Property": "Média de Calçadas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

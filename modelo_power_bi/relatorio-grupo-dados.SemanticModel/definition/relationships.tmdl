@@ -63,3 +63,38 @@ relationship fbed67b3-225e-5651-7016-885438d3ba76
 	fromColumn: 'public vw_proporcao_morte_negras_acidente'.chave
 	toColumn: 'public vw_mobilidados_indicadores_taxa_motorizacao'.chave
 
+relationship 44dbf5a3-7ba1-7e0c-2dc4-a03b94570253
+	fromColumn: 'public vw_proporcao_domicilios_infra_urbana'.ano
+	toColumn: dCalendario.ano
+
+relationship d5dbf586-720a-916c-8043-41ad7ed5788d
+	isActive: false
+	fromColumn: 'public vw_transporte_media_alta_capacidade'.ano
+	toColumn: dCalendario.ano
+
+relationship 92fdcef5-8ba7-6355-b0f3-dd5ba0ac2b06
+	isActive: false
+	fromColumn: 'public vw_tempo_deslocamento_casa_trabalho'.ano
+	toColumn: dCalendario.ano
+
+relationship ef1a397f-4dea-9325-f559-0506eba5bad7
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'public vw_transporte_media_alta_capacidade'.sigla_uf
+	toColumn: 'public vw_tempo_deslocamento_casa_trabalho'.sigla_uf
+
+relationship 2ceaea7a-bc26-b177-fa83-8b6802958d53
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'public vw_tempo_deslocamento_casa_trabalho'.sigla_uf
+	toColumn: 'public vw_proporcao_domicilios_infra_urbana'.sigla_uf
+
+relationship 8c61cb76-e4a5-89c0-d9ad-b0d05fe42197
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'public vw_proporcao_domicilios_infra_urbana'.sigla_uf
+	toColumn: 'public vw_transporte_media_alta_capacidade'.sigla_uf
+

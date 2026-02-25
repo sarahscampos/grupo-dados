@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "01e4d1729a0b00d0eb2c",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "f07ba07c208d313ca6e7",
   "position": {
-    "x": 128,
-    "y": 304,
-    "z": 3000,
-    "height": 112,
-    "width": 192,
-    "tabOrder": 3000
+    "x": 32,
+    "y": 703.99999999999989,
+    "z": 2000,
+    "height": 96,
+    "width": 224,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                      "Entity": "public vw_transporte_media_alta_capacidade"
                     }
                   },
-                  "Property": "Média de Rampas"
+                  "Property": "Total Estações"
                 }
               },
-              "queryRef": "public vw_proporcao_domicilios_infra_urbana.Média de Rampas",
-              "nativeQueryRef": "Média de Rampas"
+              "queryRef": "public vw_transporte_media_alta_capacidade.Total Estações",
+              "nativeQueryRef": "Total Estações"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                    "Entity": "public vw_transporte_media_alta_capacidade"
                   }
                 },
-                "Property": "Média de Rampas"
+                "Property": "Total Estações"
               }
             },
             "direction": "Descending"
@@ -55,6 +55,13 @@
       "categoryLabels": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
@@ -75,13 +82,6 @@
                   "Value": "true"
                 }
               }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
             }
           }
         }
@@ -91,6 +91,13 @@
       "title": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Estações de TMA em Operação'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
@@ -98,21 +105,7 @@
                 }
               }
             },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Média de Rampas'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Candara'"
-                }
-              }
-            },
-            "bold": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -123,6 +116,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Candara'"
                 }
               }
             }
@@ -145,10 +152,30 @@
       "border": [
         {
           "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -157,5 +184,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cb8884e172818b042075",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public vw_transporte_media_alta_capacidade"
+              }
+            },
+            "Property": "Total Estações"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

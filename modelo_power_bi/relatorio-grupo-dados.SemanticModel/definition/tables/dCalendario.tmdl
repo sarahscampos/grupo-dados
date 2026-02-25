@@ -1,0 +1,23 @@
+table dCalendario
+	lineageTag: 1780f805-cd90-434c-8363-df4e71da17f8
+
+	column ano
+		formatString: 0
+		lineageTag: 7572680b-433f-4820-abe0-e60367bee110
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source = ```
+				
+				VAR AnoMin = 2001 // Baseado nos dados de motorização e deslocamento
+				VAR AnoMax = YEAR(TODAY()) 
+				RETURN
+				GENERATESERIES(AnoMin, AnoMax, 1)
+				```
+
+	annotation PBI_Id = 5b21d29a1b374c9c8bf0bbeac0d8cb57
+

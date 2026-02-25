@@ -1,9 +1,15 @@
 table 'public vw_transporte_media_alta_capacidade'
 	lineageTag: d72426a8-6f62-4c93-9fdb-e149eecb1938
 
-	measure 'Acesso Cicloviário' = AVERAGE('public vw_transporte_media_alta_capacidade'[indicador])
-		formatString: 0
-		lineageTag: 2657fbbf-421c-46fd-a01a-c25646f98ed9
+	measure '% Acesso TMA Cicloviário' = DIVIDE(SUM('public vw_transporte_media_alta_capacidade'[prop_tma]), CALCULATE(SUM('public vw_transporte_media_alta_capacidade'[prop_tma]), ALL('public vw_transporte_media_alta_capacidade'[indicador])))
+		lineageTag: 5006970b-777b-4962-9c26-85ae26eb00ae
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Estações' = SUM('public vw_transporte_media_alta_capacidade'[prop_tma])
+		lineageTag: dbf0f881-2149-470d-897b-ac8d4ce0c82d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column chave
 		dataType: string
@@ -25,6 +31,7 @@ table 'public vw_transporte_media_alta_capacidade'
 	column sigla_uf
 		dataType: string
 		lineageTag: 3cf5aa8b-8ab9-4c00-9c65-5cbf60854a2c
+		dataCategory: StateOrProvince
 		summarizeBy: none
 		sourceColumn: sigla_uf
 

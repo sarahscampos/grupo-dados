@@ -1,16 +1,16 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "8e7ca114c050a8dc68d9",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "707783eb3b6cc0dbe170",
   "position": {
-    "x": 14.444444444444445,
-    "y": 15.555555555555555,
-    "z": 0,
-    "height": 272.22222222222223,
-    "width": 320,
-    "tabOrder": 0
+    "x": 32,
+    "y": 208,
+    "z": 4000,
+    "height": 240,
+    "width": 751.99999999999989,
+    "tabOrder": 4000
   },
   "visual": {
-    "visualType": "funnel",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                      "Entity": "public vw_tempo_deslocamento_casa_trabalho"
                     }
                   },
                   "Property": "sigla_uf"
                 }
               },
-              "queryRef": "public vw_proporcao_domicilios_infra_urbana.sigla_uf",
-              "nativeQueryRef": "sigla_uf",
+              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.sigla_uf",
+              "nativeQueryRef": "Estados",
               "active": true,
-              "format": "G"
+              "displayName": "Estados"
             }
           ]
         },
@@ -37,22 +37,18 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "public vw_proporcao_domicilios_infra_urbana"
-                        }
-                      },
-                      "Property": "prop_rampas"
+                    "SourceRef": {
+                      "Entity": "public vw_tempo_deslocamento_casa_trabalho"
                     }
                   },
-                  "Function": 1
+                  "Property": "Tempo Médio Viagem"
                 }
               },
-              "queryRef": "CountNonNull(public vw_proporcao_domicilios_infra_urbana.prop_rampas)",
-              "nativeQueryRef": "Média de prop_rampas"
+              "queryRef": "public vw_tempo_deslocamento_casa_trabalho.Tempo Médio Viagem",
+              "nativeQueryRef": "Tempo Médio de Viagem (min)",
+              "displayName": "Tempo Médio de Viagem (min)"
             }
           ]
         }
@@ -61,24 +57,39 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "public vw_proporcao_domicilios_infra_urbana"
-                      }
-                    },
-                    "Property": "prop_rampas"
+                  "SourceRef": {
+                    "Entity": "public vw_tempo_deslocamento_casa_trabalho"
                   }
                 },
-                "Function": 1
+                "Property": "Tempo Médio Viagem"
               }
             },
             "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1071B8'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -87,7 +98,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Estados com mais Rampas'"
+                  "Value": "'Média de Tempo de Viagem por Estado'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -98,17 +123,17 @@
                 }
               }
             },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Candara'"
-                }
-              }
-            },
             "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Candara'"
                 }
               }
             }
@@ -118,15 +143,17 @@
       "background": [
         {
           "properties": {
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -145,6 +172,19 @@
             }
           }
         }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -152,12 +192,13 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "3e4b64c61f5d4f320e53",
+        "name": "d6a434967e0e0c6b4345",
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "public vw_proporcao_domicilios_infra_urbana"
+                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
               }
             },
             "Property": "sigla_uf"
@@ -176,7 +217,7 @@
                     "From": [
                       {
                         "Name": "p",
-                        "Entity": "public vw_proporcao_domicilios_infra_urbana",
+                        "Entity": "public vw_tempo_deslocamento_casa_trabalho",
                         "Type": 0
                       }
                     ],
@@ -197,23 +238,18 @@
                       {
                         "Direction": 2,
                         "Expression": {
-                          "Aggregation": {
+                          "Measure": {
                             "Expression": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "p"
-                                  }
-                                },
-                                "Property": "sigla_uf"
+                              "SourceRef": {
+                                "Source": "p"
                               }
                             },
-                            "Function": 3
+                            "Property": "Tempo Médio Viagem"
                           }
                         }
                       }
                     ],
-                    "Top": 10
+                    "Top": 5
                   }
                 }
               },
@@ -221,7 +257,7 @@
             },
             {
               "Name": "p",
-              "Entity": "public vw_proporcao_domicilios_infra_urbana",
+              "Entity": "public vw_tempo_deslocamento_casa_trabalho",
               "Type": 0
             }
           ],
@@ -250,28 +286,24 @@
               }
             }
           ]
-        },
-        "isHiddenInViewMode": true
+        }
       },
       {
-        "name": "8c52809fec66f6cd17d1",
+        "name": "b0e45e4fc734605110c5",
+        "ordinal": 1,
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "public vw_proporcao_domicilios_infra_urbana"
-                  }
-                },
-                "Property": "prop_rampas"
+              "SourceRef": {
+                "Entity": "public vw_tempo_deslocamento_casa_trabalho"
               }
             },
-            "Function": 1
+            "Property": "Tempo Médio Viagem"
           }
         },
         "type": "Advanced"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }
